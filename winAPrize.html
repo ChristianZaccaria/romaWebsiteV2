@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+  <title>Assignment 2a/b: JavaScript</title>
+  <link rel="stylesheet" href = "css/style.css">
+</head>
+
+<body>
+
+<div class = "ui grid stackable container">
+
+					<a href="index.html">
+					<img src="images/lobaLogo.png" id="logo" alt="Roma Logo">
+					</a>
+
+					<nav class="ui top attached tabular stackable menu">
+					<a class="item" href = "index.html">Home</a>
+					<a class="item" href = "team.html">Team</a>
+					<a class="item" href = "topPlayers.html">Top Players</a>
+					<a class="active item" href = "winAPrize.html">Win A Prize</a>
+          <a class="item" href = "about.html">About</a>
+					</nav>
+   
+   <div class = "ui sixteen wide center aligned column">
+   <header><h1 class="ml15">
+    <span class="word">WIN</span>
+    <span class="word">A</span>
+    <span class="word">PRIZE</span>
+  </h1></header>
+   </div>
+   
+   <div id = "smallerImage">
+  <div class ="ui sixteen wide column"><img src="images/prize.jpg" alt = "Picture of kids walking with Roma Players in the Stadium" class = "ui fluid image"></div>
+   </div>
+   <main>
+   <p class="prize">Here is an incredible opportunity to meet some of the players of the AS Roma team.</p>
+    <p class="prize">Once the survey below is completed and filled with your contact details you are all set and will be part of a draw taking place the 18th of December, 2021.</p>
+	<br>
+	
+	<hr>
+	
+	
+  
+
+
+
+  <form id ="additem" class = "ui form">
+	<h2 class="h2Survey"><span class="black"></span>Survey - </span>Your chance to meet the players of the amazing team AS Roma</h2>
+
+  <div class="ui column">
+  <p class = "pPrize">- Add or delete your all-time favourite soccer players below, one by one:</p>
+  <div class="fields">
+    <div class="eight wide field">
+          <input name="newitem" id = "newitem" type="text" maxlength="100" placeholder="Player Name" required>
+    </div>
+    <div class="field">
+  <button type="button" id="submitItem" class = "ui button">Submit Player</button>
+    </div>
+  </div>
+    
+
+     
+    </form>
+    <section class="list">
+      <ul id="listul"></ul>
+      </section>
+      </div>
+    
+      <form action="submit.html" method="get" id = "winPrize" class="ui form">
+
+
+
+
+	
+	<br><br><br><br><br>
+	<div class="inline field">
+     <label for = "continent" class="six wide field">- In which continent are you located?</label>
+     <select class="ui fluid dropdown four wide field" id = "continent" name = "continent">
+    <option value="A">Asia</option>
+    <option value="AN">Antarctica</option>
+    <option value="EU">Europe</option>
+    <option value="SA">South America</option>
+    <option value="NA">North America</option>
+    <option value="OC">Oceania</option>
+    <option value="AF">Africa</option>
+	</select>
+	</div>
+	<br>
+	
+	
+	<p class = "pPrize">- Please let us know, what would be the best thing of winning this Prize?</p>
+	
+	<div class="field comments">
+	<label for = "comments">Why do you wish to be picked? (We will read all you have to say)</label>
+	<textarea id = "comments" name = "comments"></textarea>
+	</div>
+	<br><br>
+	
+	<h2 class="h2Survey"><span class="black">Thank you for answering! -</span> Please provide the following contact details:</h2>
+	<br><br>
+	<div class = "inline field">
+    <label for="name" class="four wide field">First Name</label>
+    <input type="text" name="name" id="name" class="eight wide field" required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)*" title="Please enter your First Name (First Letter capitalised)">
+	</div>
+	
+	<div class = "inline field">
+    <label for="surname" class="four wide field">Surname</label>
+    <input type="text" name="surname" id="surname" class="eight wide field" required pattern = "[A-Z][a-z]+( [A-Z][a-z]+)*" title="Please enter your Surname (First Letter capitalised)">
+	</div>
+	
+	
+	<div class = "inline field">
+    <label for="cellphoneNumber" class="four wide field">Cellphone Number</label>
+    <input type="text" name="cellphoneNumber" id="cellphoneNumber" class="eight wide field" pattern = "^(\(\d{3}\)|\d{3})-?\d{6,9}$" title="Please enter a valid phone number with 9 to 12 digits">
+	</div>
+
+
+	<div class = "inline field">
+    <label for="emailAddress" class="four wide field">Email Address</label>
+    <input type="text" name="emailAddress" id="emailAddress" class="eight wide field" required pattern = "^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$" title="Please enter a valid email address (i.e. chris32BU@xmail.com)">
+	</div>
+	
+	<div class = "inline field">
+	<label for="DOB" class="four wide field">Date of Birth</label>
+	<input type="date" name="DOB" id="DOB" class="eight wide field" required title="Please select your date of birth">
+	</div>
+	
+	<br><br>
+	
+	<div class="checkbox">
+      <input type="checkbox" id = "TandC"  name ="TandC" required title="If you've read and agreed to our T&Cs, you may tick this box and proceed.">
+      <label for = "TandC">I have read and I agree to the Terms and Conditions of this Website.</label>
+    </div>	
+    <button type="button" id="disclaimerButton" class="ui button">Disclaimer</button>
+      <p id="disclaimer">
+        Disclaimer! If our AI system detects that this Survey was completed by a Bot, your chance of winning the prize will not be taken into account.
+      </p>
+	
+	
+	<br><br>
+	<div class = "centerButton"><input type="submit" class = "ui primary button" value="Submit">
+	<input type="reset" class = "ui primary button" value = "Start Again"></div>
+	</form>
+	
+	
+	
+	</main>
+	
+					<footer class = "sixteen wide center aligned column">
+					<p class="pfooter">&copy; AS ROMA - All rights reserved</p>
+					<p class="pfooter"><a href="mailto:20092351@mail.wit.ie" class="indexQuoteLinks">AS Roma Email</a></p>
+					</footer>
+	
+	</div>
+						<script
+						src="https://code.jquery.com/jquery-3.4.1.min.js"
+						integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+						crossorigin="anonymous"></script>
+						<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+            <script src = "js/javaScript.js"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+						<script>
+							anime.timeline({loop: false})
+						.add({
+							targets: '.ml15 .word',
+							scale: [14,1],
+							opacity: [0,1],
+							easing: "easeOutCirc",
+							duration: 1200,
+							delay: (el, i) => 800 * i
+						}).add({
+							targets: '.ml15',
+							opacity: 0,
+							duration: 1000,
+							easing: "easeOutExpo",
+							delay: 10000000000000000
+						});
+						</script>
+
+            <script>
+            const form = document.querySelector('#winPrize')
+            form.addEventListener('submit', evt => {
+              
+             
+              alert("\nThank you " + form.elements.name.value + " " + form.elements.surname.value + " for participating.\n\n"
+              + "We will reach you if there are any good news, by:\n\n" + "Email provided: " + form.elements.emailAddress.value 
+              + "\nPhone Number provided: " + form.elements.cellphoneNumber.value)
+            })
+            </script>
+
+
+<script>
+  const items = [
+  'Cristiano Ronaldo',
+  'Leonel Messi',
+  'Francesco Totti'
+]
+
+let playerList = document.querySelector('#listul')
+let inputForm = document.querySelector('#additem')
+let itemInput = inputForm.elements.newitem
+
+//this avoids the enter button from refreshing the page
+$('form').keypress(function(event) { 
+    return event.keyCode != 13;
+});
+
+
+const appendNewItem = (item) => {
+  let newListItem = document.createElement('li')
+  newListItem.innerHTML = item 
+  playerList.appendChild(newListItem) 
+}
+
+
+
+let btn500 = document.querySelector('#submitItem')
+
+btn500.addEventListener('click', ()=> {
+
+  let newItem = itemInput.value
+  if (newItem) {
+  let newElem = document.createElement('li')
+  newElem.textContent=newItem
+  playerList.appendChild(newElem)
+ 
+  itemInput.value = ''
+  itemInput.focus()
+}
+})
+
+
+items.forEach(currentitem => {
+  appendNewItem(currentitem)
+});
+
+  	  playerList.addEventListener('click', evt => {
+        
+		  if(evt.target.matches('li')) {
+             const thisItem = evt.target
+             thisItem.style.marginLeft='1000px'
+			 setTimeout(()=>playerList.removeChild(thisItem), 1000)
+       
+       
+		  }
+	  })
+</script>
+
+
+</body>
+</html>

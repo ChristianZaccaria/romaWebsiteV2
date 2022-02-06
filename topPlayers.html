@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+  <title>Assignment 2a/b: JavaScript</title>
+  <link rel="stylesheet" href = "css/style.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
+</head>
+
+<body>
+
+<div class = "ui grid stackable container">
+
+					<a href="index.html">
+					<img src="images/lobaLogo.png" id="logo" alt="Roma Logo">
+					</a>
+
+					<nav class="ui top attached tabular stackable menu">
+					<a class="item" href = "index.html">Home</a>
+					<a class="item" href = "team.html">Team</a>
+					<a class="active item" href = "topPlayers.html">Top Players</a>
+					<a class="item" href = "winAPrize.html">Win A Prize</a>
+          <a class="item" href = "about.html">About</a>
+					</nav>
+	
+	<div class = "ui sixteen wide center aligned column">
+	<header><h1 class="ml15">
+    <span class="word">TOP</span>
+    <span class="word">PLAYERS</span>
+  </h1></header>
+	</div>
+	<main>
+
+    <div id="gallery">
+
+    <h2 class="h2Cards">STRIKERS</h2>
+	  <div class="strikersss"></div>
+
+    <h2 class="h2Cards">MIDFIELDERS</h2>
+	  <div class="midfieldersss"></div>
+
+    <h2 class="h2Cards">DEFENDERS</h2>
+	  <div class="defendersss"></div>
+
+    <h2 class="h2Cards">GOALKEEPERS</h2>
+	  <div class="goalkeepersss"></div>
+
+	
+  
+    
+    <script id="strikerCards" type="text/x-handlebars-template">
+      <div class="ui link cards">
+    {{#each this}}
+    <div class="ui card">
+    <div class="image">
+      <a href="{{image}}" data-title = "{{formatFullName fullname}}"    data-lightbox="{{lightbox}}">
+      <img src="{{smallImage}}"  class="noRadius" alt="Picture of Roma Player"></a>
+    </div>
+    <div class="content">
+      <a class="header">{{formatFullName fullname}}</a>
+      <div class="meta">
+       <span class="date">Born {{born}}</span>
+      </div>
+      <div class="description">
+        {{nationality}} player -  {{description}}
+      </div>
+    </div>
+    <div class="extra content">
+      <a>
+        <i class="black tie icon"></i>
+        Shirt No. {{shirt}}
+      </a>
+    </div>
+  </div>
+  {{/each}}
+  </div>
+  </script>
+  </div>
+
+<br>
+	
+<hr class = "hrFunFacts">
+
+<h2 class="h2Cards">Fun Facts</h2>
+
+<div class="ui styled fluid accordion">
+  <div class="active title">
+    <i class="dropdown icon"></i>
+    Did you know that Francesco Totti played for Roma for his entire career?
+  </div>
+  <div class="active content">
+    <p class="pRoma">Totti was born in Roma, and he was always a big fan of the team. He always wanted to play for them. He joined the team in 1983, and he retired in 2017, solely playing for AS Roma eventhough teams like Barcelona had tried to offer him a contract.</p>
+  </div>
+  <div class="title">
+    <i class="dropdown icon"></i>
+    Did you know that AS Roma shares the Stadium with their worst rival?
+  </div>
+  <div class="content">
+    <p class="pRoma">Roma's biggest rival is Lazio team which are also located in Rome. Everytime there is a match between them, they give their best to prove to the city which team is better.</p>
+  </div>
+  <div class="title">
+    <i class="dropdown icon"></i>
+    Did you know that Mohamed Salah used to play for AS Roma?
+  </div>
+  <div class="content">
+    <p class="pRoma">Before Salah played for Liverpool, he was playing for Roma. He is an extraordinary player. He joined Roma in 2015, left for Liverpool in 2017.</p>
+    
+  </div>
+</div>
+<br><br>
+	</main>
+	
+					<footer class = "sixteen wide center aligned column">
+					<p class="pfooter">&copy; AS ROMA - All rights reserved</p>
+					<p class="pfooter"><a href="mailto:20092351@mail.wit.ie" class="indexQuoteLinks">AS Roma Email</a></p>
+					</footer>
+	
+	</div>
+   
+						<script
+						src="https://code.jquery.com/jquery-3.4.1.min.js"
+						integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+						crossorigin="anonymous"></script>
+						<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+						
+						<script src="js/accordion.js"></script>
+						<script language='javascript'>
+						$(document).ready(function(){
+						$('.ui.accordion').accordion();
+						});
+						</script>
+
+            <script src = "js/javaScript.js"></script>
+            <script src="js/lightbox.min.js"></script>
+
+            <script src="js/rollover.js"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
+
+						<script>
+							anime.timeline({loop: false})
+						.add({
+							targets: '.ml15 .word',
+							scale: [14,1],
+							opacity: [0,1],
+							easing: "easeOutCirc",
+							duration: 1200,
+							delay: (el, i) => 800 * i
+						}).add({
+							targets: '.ml15',
+							opacity: 0,
+							duration: 1000,
+							easing: "easeOutExpo",
+							delay: 10000000000000000
+						});
+						</script>
+
+
+
+
+<script>
+$(document).ready(function() {
+
+  const strikers = [
+         {
+          "name":"Francesco",
+          "fullname":"francesco toTti",
+          "image":"images/totti.jpg",
+          "smallImage":"images/small/tottiS.jpg",
+          "born":"September 27, 1976",
+          "description":"Known as The Gladiator, one of the best players. A true Legend.",
+          "nationality":"Italian",
+          "shirt":10,
+          "lightbox":"ST"
+         },
+         {
+          "name":"Carles",
+          "fullname":"Carles Perez",
+          "image":"images/carles.jpeg",
+          "smallImage":"images/small/carlesS.jpg",
+          "born":"February 16, 1998",
+          "description":"Outstanding striker. Used to play for Barcelona. Joined AS Roma in the year 2020.",
+          "nationality":"Spanish",
+          "shirt":31,
+          "lightbox":"ST"
+         },
+         {
+          "name":"Edin",
+          "fullname":"Edin Dzeko",
+          "image":"images/dzeko.jpg",
+          "smallImage":"images/small/dzekoS.jpg",
+          "born":"March 17, 1986",
+          "description":"Excellent Striker. Always surprises the team with his goals.",
+          "nationality":"Bosnian",
+          "shirt":9,
+          "lightbox":"ST"
+         }
+        ]
+
+
+        const midfielders = [
+         {
+          "name":"Henrikh",
+          "fullname":"Henrikh Mkhitaryan",
+          "image":"images/miki.jpg",
+          "smallImage":"images/small/mikiS.jpg",
+          "born":"January 21, 1989",
+          "description":"Super fast midfielder. Joined AS Roma in 2019.",
+          "nationality":"Armenian",
+          "shirt":77,
+          "lightbox":"MF"
+         },
+         {
+          "name":"Nicolo",
+          "fullname":"Nicolo Zaniolo",
+          "image":"images/zaniolo.jpg",
+          "smallImage":"images/small/zanioloS.jpg",
+          "born":"July 2, 1999",
+          "description":"Professional footballer. Joined AS Roma in 2018.",
+          "nationality":"Italian",
+          "shirt":22,
+          "lightbox":"MF"
+         },
+         {
+          "name":"Daniele",
+          "fullname":"Daniele De Rossi",
+          "image":"images/derossi.jpg",
+          "smallImage":"images/small/derossiS.jpg",
+          "born":"July 24, 1983",
+          "description":"Another true midfielder Legend. One of a kind player.",
+          "nationality":"Italian",
+          "shirt":16,
+          "lightbox":"MF"
+         }
+        ]
+
+        const defenders = [
+         {
+          "name":"Federico",
+          "fullname":"Federico FaZio",
+          "image":"images/fazio.jpg",
+          "smallImage":"images/small/fazioS.jpg",
+          "born":"March 17, 1987",
+          "description":"Professional footballer. Fast and reliable player.",
+          "nationality":"Argentinian",
+          "shirt":20,
+          "lightbox":"DF"
+         },
+         {
+          "name":"Juan",
+          "fullname":"Juan Jesus",
+          "image":"images/juan.jpg",
+          "smallImage":"images/small/juanS.jpg",
+          "born":"Born June 10, 1991",
+          "description":"He will defend the pitch even if it is the last thing he does.",
+          "nationality":"Brazilian",
+          "shirt":5,
+          "lightbox":"DF"
+         },
+         {
+          "name":"Chris",
+          "fullname":"Chris Smalling",
+          "image":"images/smalling.jpg",
+          "smallImage":"images/small/smallingS.jpg",
+          "born":"November 22, 1989",
+          "description":"Professional player who knows what he is doing.",
+          "nationality":"English",
+          "shirt":6,
+          "lightbox":"DF"
+         }
+        ]
+
+        const goalkeepers = [
+         {
+          "name":"Pau",
+          "fullname":"PaU lopez",
+          "image":"images/pau.jpg",
+          "smallImage":"images/small/pauS.jpg",
+          "born":"December 13, 1994",
+          "description":"He has had amazing saves with AS Roma team.",
+          "nationality":"Spanish",
+          "shirt":13,
+          "lightbox":"GK"
+         },
+         {
+          "name":"Antonio",
+          "fullname":"Antonio Mirante",
+          "image":"images/mirante.jpg",
+          "smallImage":"images/small/miranteS.jpg",
+          "born":"July 8, 1983",
+          "description":"Exceptional Goalkeeper, he will always give his all in the pitch.",
+          "nationality":"Italian",
+          "shirt":83,
+          "lightbox":"GK"
+         }
+        ]
+  
+         //custom helper
+        Handlebars.registerHelper('formatFullName', (names) => {
+        let data=names.split(" ")
+        let formattedname=""
+        for (item of data) {
+          formattedname+= `${item.charAt(0).toUpperCase()}${item.substring(1,).toLowerCase()} `
+        }
+        return formattedname
+        })
+
+        let template = Handlebars.compile($('#strikerCards').html());
+
+        let outputStrikers = template(strikers);
+        $('.strikersss').html(outputStrikers);
+
+        let outputMidfielders = template(midfielders);
+        $('.midfieldersss').html(outputMidfielders);
+
+        let outputDefenders = template(defenders);
+        $('.defendersss').html(outputDefenders);
+
+        let outputGoalkeepers = template(goalkeepers);
+        $('.goalkeepersss').html(outputGoalkeepers);
+
+
+
+
+      
+  });
+
+  </script>
+
+
+
+  <script>
+    $(document).ready(function() {
+
+$('.card img').css('opacity', 0.7)
+
+$('.card img').hover(
+  function(){
+  $(this).stop().fadeTo('slow', 1)
+  },
+  function(){
+  $(this).stop().fadeTo('slow', 0.6)
+  })
+
+
+lightbox.option({
+    'fadeDuration':1200,
+    'imageFadeDuration':2400,
+    'wrapAround': true
+})
+
+})
+    </script>
+
+
+
+
+</body>
+</html>

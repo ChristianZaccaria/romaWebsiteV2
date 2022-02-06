@@ -1,0 +1,483 @@
+*	{
+margin: 0;
+padding: 0;
+}
+
+body	{
+	
+padding-left: 15%;
+padding-right: 15%;
+font-family: sans-serif;
+padding-bottom: 15%;
+background-color: #8E1F2F;
+
+
+}
+
+
+
+
+h1#indexName {
+padding-top: 1em;
+}
+
+.ui.cards {
+	margin-left: 0.3em;
+}
+
+h1 {
+padding-top: 1em;
+color: black;
+}
+
+h2, h3 {
+	padding-top: 3em;
+	color: black;
+}
+
+.black {
+	color: black;
+}
+
+#h2Survey {
+	color: #8E1F2F;
+	margin-top: -2em;
+	text-align: center;
+}
+
+#h2Submit {
+	color: #8E1F2F;
+	margin-top: -2em;
+}
+
+
+.h3Team {
+	padding-top: 1em;
+	color: black;
+	text-align: center;
+}
+
+.h3TottiStadium {
+	margin-right: 2.5em;
+	padding-top: 1em;
+	color: black;
+	padding-left: 3em;
+}
+
+p {
+	padding-top: 2em;
+	text-align: justify;
+	line-height: 1.5em;
+	color: black;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+.h2Cards {
+
+	color: black;
+	padding-left: 3em;
+}
+
+
+.pIndex {
+	padding-top: 1em;
+	text-align: justify;
+	line-height: 1.5em;
+	color: black;
+	padding-right: 2em;
+	padding-left: 2em;
+	font-size: 1.1em;
+}
+
+#upcomingGames {
+	line-height: 2em;
+}
+
+caption {
+	padding-bottom: 1.2em;
+	font-weight: bold;
+	color: Navy;
+}
+
+hr {
+	margin-top: 3em;
+	margin-bottom: 3em;
+	border: 1px solid #F0BC42;
+	margin-right: 7em;
+	margin-left: 7em;
+}
+
+.hrTeam {
+	margin-top: 3em;
+	margin-bottom: 1em;
+	border: 1px solid #F0BC42;
+	margin-right: 7em;
+	margin-left: 7em;
+}
+
+.hrFunFacts {
+	margin-top: 3em;
+	border: 1px solid #F0BC42;
+	margin-right: 7em;
+	margin-left: 7em;
+	margin-bottom: -2.5em;
+}
+
+.subImages {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 2em;
+	width: 40em;
+}
+
+#indexQuote {
+	display: block;
+	margin-top:2em;
+	margin-right: 5em;
+	margin-left: 5em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
+	line-height: 1.5em;
+	text-align: justify;
+	color: black;
+	font-size: 1.25em;
+	border: 2px solid #F0BC42;
+	border-radius: 20px;
+}
+
+a:visited.menuLink {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover.menuLink {
+	color: white;
+	text-decoration: none;
+}
+
+a:link.menuLink {
+	color: white;
+	text-decoration: none;
+}
+
+a:active.menuLink {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited.indexQuoteLinks {
+	font-weight: bold;
+	text-decoration: none;
+	color: #a1288f;
+}
+
+a:hover.indexQuoteLinks {
+	font-weight: bold;
+	text-decoration: none;
+	color: #0072b1;
+	background: gray;
+}
+
+a:link.indexQuoteLinks {
+	font-weight: bold;
+	text-decoration: none;
+	color: #0072b1;
+}
+
+a:active.indexQuoteLinks {
+	font-weight: bold;
+	text-decoration: none;
+	color: red;
+}
+
+
+footer {
+	margin-top: 20px;
+	border: solid #F0BC42 5px;
+	margin-bottom: 2em;
+}
+
+.pfooter {
+	margin-top: -10px;
+	text-align: center;
+	margin-bottom: 10px;
+	padding-bottom: 1.1em;
+	font-weight: bold;
+}
+
+
+img {
+	border-radius: 20px;
+}
+
+.noRadius {
+
+border-radius: 1px;
+}
+
+.container {
+	background-color: white;
+	padding-bottom: 2em;
+	padding-top: 2em;
+	border-radius: 20px;
+}
+
+.centerText {
+	text-align: center;
+	color: black;
+	text-decoration: underline overline;
+	margin-bottom: 1.5em;
+}
+
+#logo {
+	position: absolute;
+	margin-top: 0.5em;
+	width: 5em;
+	height: auto;
+}
+
+.ui.container {
+  margin-top:2em;
+}
+
+.ui.tabular.menu {
+	border-bottom: solid 1px #F0BC42;
+	padding-left: 8em;
+}
+
+.ui.tabular.menu .item {
+	font-family: sans-serif;
+	color: black;
+	font-weight: bold;
+}
+
+.ui.tabular.menu .item:hover {
+	background-color: pink;
+	color: white;
+}
+
+.ui.tabular.menu .active.item {
+	border-radius: 30px;
+	border: pink;
+}
+
+.ui.tabular.menu .active.item {
+	background-color: crimson;
+	color: white;
+	border: crimson;
+}
+
+.pRoma {
+	text-align: justify;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	color: black;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+.pRoma1 {
+	text-align: center;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	color: black;
+	margin-top: -2em;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+
+
+form#winPrize label {  
+  font-weight: bold;  
+  font-size: medium;  
+  color: black;  
+  line-height: 150%;
+  margin-left: 2em;
+}
+
+.checkbox {
+	text-align: center;
+}
+
+.pPrize {
+	font-weight: bold;
+	
+}
+
+#smallerImage {
+	width: 60em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.field.comments {
+	padding-top: 1em;
+	outline: none !important;
+    border:1px solid #F0BC42;
+	border-radius: 1em;
+    box-shadow: 0 0 10px #F0BC42;
+}
+
+.prize {
+	text-align: justify;
+	font-size: 1.4em;
+	line-height: 1.5em;
+	color: black;
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+section {
+  margin-top:1em;
+  text-align:justify;
+  padding-bottom: 3em;
+}
+
+.centerButton {
+	text-align: center;
+}
+
+h4 {
+	text-align: center;
+	font-size: 1.2em;
+	padding-top: 2em;
+}
+
+#winPrize input:valid {
+    color: black;
+}
+
+#winPrize input:invalid {
+    color: red;
+    border-color:red;
+}
+
+#winPrize input[type=submit] {
+    color: white;
+}
+
+#more1,
+#more2 {
+  display: none;
+  margin-top: 1em;
+	
+  transform: scale(0);
+  transition: 3s ease transform;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid #F0BC42;
+  cursor: pointer;
+	padding: 0.5em;
+}
+
+button:hover {
+  background-color: crimson;
+}
+
+
+#beforeafter img{
+	width:100%;
+}
+
+#gallery img {
+	margin-bottom:-0.3em;
+}
+
+
+#disclaimer {
+	display:none;
+	font-weight: bold;
+	text-align: justify;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	color: black;
+	padding-right: 6em;
+	padding-left: 6em;
+}
+
+#disclaimerButton {
+	font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid #F0BC42;
+  cursor: pointer;
+	padding: 0.5em;
+	margin-left: 5em;
+	margin-top: 2em;
+	
+}
+
+#disclaimerButton:hover {
+	background-color: crimson;
+}
+
+.ml15 {
+	padding-top: 1em;
+	font-weight: 800;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 {
+	padding-top: 1em;
+	font-weight: 800;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+	text-align:center;
+}
+
+.ml12 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+}
+
+#nameTitle {
+	margin-bottom: -2em;
+}
+
+
+li {
+  -webkit-transition: margin-left 3000ms linear;
+  transition: margin-left 3000ms linear;
+}
+
+li {
+
+	text-align: justify;
+	line-height: 1.5em;
+	color:rgb(71, 71, 71);
+	padding-right: 2em;
+	padding-left: 2em;
+	font-size: 1.1em;
+	font-weight:bold;
+}
+
+#listul {
+	padding-left:5em;
+	padding-right: 5em;
+	list-style-type: circle;
+}
+
+#submitItem {
+	margin-left: 4em;
+}
+
+#newitem {
+	margin-left: 3em;
+}

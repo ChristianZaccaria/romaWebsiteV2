@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+				<title>Assignment 2a/b: JavaScript</title>
+				<link rel="stylesheet" href="css/style.css">
+		</head>
+				<body>
+			
+					<div class = "ui grid stackable container">
+					
+					<a href="index.html">
+					<img src="images/lobaLogo.png" id="logo" alt="Roma Logo">
+					</a>
+					
+					
+					<nav class="ui top attached tabular stackable menu">
+					
+					<a class="active item" href = "index.html">Home</a>
+					<a class="item" href = "team.html">Team</a>
+					<a class="item" href = "topPlayers.html">Top Players</a>
+					<a class="item" href = "winAPrize.html">Win A Prize</a>
+					<a class="item" href = "about.html">About</a>
+					</nav>
+					
+					
+					
+			
+					<div class = "ui sixteen wide center aligned column">	
+					<header>
+						<div id="nameTitle"></div>
+						<h1 class="ml15">
+							<span class="word">AS</span>
+							<span class="word">ROMA</span>
+						</h1>
+					
+					</header>
+					</div>
+				
+				
+				
+					<div class = "ui computer row">
+					<div class ="ui eight wide column"><img src="images/leftIndex.jpg" alt = "Picture of Roma Stadium" class = "ui fluid image"></div>
+					<div class = "ui eight wide column"><img src="images/rightIndex.jpg" alt = "Picture of Roma players celebrating" class = "ui fluid image"></div>
+					</div>
+				
+					
+			
+				
+					
+					<div class = "ui sixteen wide row">
+					<blockquote id="indexQuote">This club is one of the best teams in the world. They offer more than just scoring goals and winning
+					 matches. They play passionately for every single fan, and for this reason, this team is better than any other.</blockquote>
+					</div>	
+						
+						<main class = "ui three column center aligned stackable row">
+						<section class = "ui column">
+						<h4>TEAM</h4>
+
+						<p>AS Roma is a one of a kind team! They do their best to make their fans happy. Its history goes back to 1927 when it was founded.</p>
+
+						
+						<a href="team.html"><button class="ui primary button">
+							Take me there! - <i class ="hand pointer icon"></i>
+						</button></a>
+					
+						</section>
+
+						<section class = "ui column">
+						<h4>TOP PLAYERS</h4>
+
+						<p>If you wish to know who are the top strikers, midfielders, defenders, and goalkeepers of the AS Roma team. Just click on the button below.</p>
+
+						<a href="topPlayers.html"><button class="ui primary button">
+							Take me there! - <i class ="hand pointer icon"></i>
+						</button></a>
+						</section>
+
+						<section class = "ui column">
+						<h4>WIN A PRIZE</h4>
+
+						<p>Win a trip to Roma and meet the club and players for free. Fill out a quick survey and your details and you are all set.</p>
+
+						<a href="winAPrize.html"><button class="ui primary button" >
+						Take me there! - <i class ="hand pointer icon"></i>
+						</button></a>
+						</section>
+			
+						
+					</main>
+					
+					
+					<footer class = "sixteen wide center aligned column">
+					<p class="pfooter">&copy; AS ROMA - All rights reserved</p>
+					<p class="pfooter"><a href="mailto:20092351@mail.wit.ie" class="indexQuoteLinks">AS Roma Email</a></p>
+					</footer>
+					
+						</div>
+						<script
+						src="https://code.jquery.com/jquery-3.4.1.min.js"
+						integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+						crossorigin="anonymous"></script>
+						<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+						<script src = "js/javaScript.js"></script>
+						<script src = "js/rollover.js"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+						
+						
+						<script>
+							let name = prompt("Hi, Please enter your name: ", "")
+					const goodName = name.toUpperCase();
+					document.querySelector('#nameTitle').innerHTML = "<h1>Welcome <span style = 'color: gold';>" + goodName + "</span> to one of the great clubs in the World</h1>"
+					</script>
+
+						
+						<script>
+							anime.timeline({loop: false})
+						.add({
+							targets: '.ml15 .word',
+							scale: [14,1],
+							opacity: [0,1],
+							easing: "easeOutCirc",
+							duration: 3000,
+							delay: (el, i) => 800 * i
+						}).add({
+							targets: '.ml15',
+							opacity: 0,
+							duration: 1000,
+							easing: "easeOutExpo",
+							delay: 10000000000000000
+						});
+				
+						</script>	
+
+						
+
+
+				</body>
+	</html>

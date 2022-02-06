@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+				<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+				<title>Assignment 2a/b: JavaScript</title>
+				<link rel="stylesheet" href="css/style.css">
+		</head>
+				<body>
+			
+					<div class = "ui grid stackable container">
+					
+					<a href="index.html">
+					<img src="images/lobaLogo.png" id="logo" alt="Roma Logo">
+					</a>
+					
+					
+					<nav class="ui top attached tabular stackable menu">
+					
+					<a class="item" href = "index.html">Home</a>
+					<a class="item" href = "team.html">Team</a>
+					<a class="item" href = "topPlayers.html">Top Players</a>
+					<a class="item" href = "winAPrize.html">Win A Prize</a>
+					<a class="active item" href = "about.html">About</a>
+					</nav>
+					
+					
+					
+			
+					<div class = "ui sixteen wide center aligned column">	
+					<header>
+						<h1 class="ml15">
+							<span class="word">About</span>
+							<span class="word">This</span>
+							<span class="word">New</span>
+							<span class="word">Plugin</span>
+						</h1>
+					
+					</header>
+					</div>
+					
+					
+					<div class = "ui computer row">
+				
+					<div class ="ui sixteen wide column"><img src="images/anime1.png" alt = "Picture of Roma Stadium"  class = "ui fluid image"></div>
+					
+					</div>
+				
+					<main>
+						<p class="prize">This plugin is called anime.js. I used it to create animation on the Title of each web page. I was able to make each word pop up one by one, and set the delay of one word showing up after the other. </p>
+						 <p class="prize">This animation can be customized, you could also make the words appear and disappear by looping the animation, however since I used it for titles I turned the loop to false.</p>
+						 <p class="prize">Moreover, anime.js does not only do this, there are so many more things you can do with it, including 3d animation. However, most features can be very complex and require to learn more about how to implement them properly.</p>
+
+					 <br>
+			
+						
+					</main>
+					
+					
+					<footer class = "sixteen wide center aligned column">
+					<p class="pfooter">&copy; AS ROMA - All rights reserved</p>
+					<p class="pfooter"><a href="mailto:20092351@mail.wit.ie" class="indexQuoteLinks">AS Roma Email</a></p>
+					</footer>
+					
+						</div>
+						<script
+						src="https://code.jquery.com/jquery-3.4.1.min.js"
+						integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+						crossorigin="anonymous"></script>
+						<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+						<script src = "js/javaScript.js"></script>
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+						<script>
+							anime.timeline({loop: false})
+						.add({
+							targets: '.ml15 .word',
+							scale: [14,1],
+							opacity: [0,1],
+							easing: "easeOutCirc",
+							duration: 1200,
+							delay: (el, i) => 800 * i
+						}).add({
+							targets: '.ml15',
+							opacity: 0,
+							duration: 1000,
+							easing: "easeOutExpo",
+							delay: 10000000000000000
+						});
+						</script>
+						
+				</body>
+	</html>

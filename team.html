@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.css">
+  <title>Assignment 2a/b: JavaScript</title>
+	<link rel="stylesheet" href="css/twentytwenty.css">
+  <link rel="stylesheet" href = "css/style.css">
+</head>
+
+<body>
+
+<div class = "ui grid stackable container">
+					
+					<a href="index.html">
+					<img src="images/lobaLogo.png" id="logo" alt="Roma Logo">
+					</a>
+
+					<nav class="ui top attached tabular stackable menu">
+					
+					<a class="item" href = "index.html">Home</a>
+					<a class="active item" href = "team.html">Team</a>
+					<a class="item" href = "topPlayers.html">Top Players</a>
+					<a class="item" href = "winAPrize.html">Win A Prize</a>
+					<a class="item" href = "about.html">About</a>
+					</nav>
+	
+	<div class = "ui sixteen wide center aligned column">
+		<h1 class="ml15">
+			<span class="word">TEAM</span>
+			
+		</h1>
+	</div>
+	
+	<header class = "ui computer row">
+    <div class = "ui eight wide column">
+      <div id="beforeafter">
+				<img src = "images/before.png" alt="Picture of AS Roma Team in 1927">
+				<img src = "images/after.jpg" alt="Picture of AS Roma Team"> 
+			 </div> 
+			
+		
+    </div>
+		
+	
+	<section class = "ui eight wide column">
+      <h3 class="ml12"><span class="word">AS ROMA TEAM</span></h3>
+
+      <p class = "pRoma">AS Roma is an Italian professional football club founded in 1927, in Rome. 
+	  The first time that Roma won Serie A league was in 1941. Roma has always been 
+	  an amazing team since beggining of times. Their Stadium is the Stadio Olimpico. The club's 
+	  colors are carmine red and golden yellow. One more thing that distinguishes AS Roma is their club badge 
+	  which is a she-wolf.</p>
+    </section>
+	</header>
+	
+	<div class="ui sixteen wide center aligned column">
+	<hr class = "hrTeam">
+	</div>
+	
+	<main class = "ui two column center aligned stackable row">
+
+  <div class = "ui column">
+		<h3 class="h3TottiStadium">Francesco Totti</h3>
+		<p class="pRoma1">One of the best soccer players of all time!</p>
+		<button id="btn1">
+			<i class ="soccer ball icon"></i>Read More...
+		 </button>
+		<div id = "more1">
+  	<img src="images/totti.jpg" alt="Picture of Francesco Totti" class = "ui fluid circular image">
+  
+  <p class="pRoma">Totti since he first started playing for Roma, he never abandoned the team. He spent his entire Soccer career at Roma. 
+  He's won a Serie A title, two Supercoppa Italiana Titles, and two Coppa Italia Titles. He was considered a remarkable striker with a sniper-like aim with the ball. 
+He is the second-highest scorer of all time in Italian league history. Totti is considered one of the greatest players of all time. A true Legend.  </p>
+<p>
+	<span id="rating1"></span>
+</p>
+<button class="ui orange button" id="btn3">
+	Real fan of Totti? - <i class="heart icon"></i>
+</button>
+
+	</div>
+	</div>
+	
+	
+	<div class = "ui column">
+		<h3 class="h3TottiStadium">Stadio Olimpico</h3>
+		<p class="pRoma1">Stadium full of excitement for Everyone!</p>
+		<button id="btn2">
+			<i class ="ticket icon"></i>Read More...
+		 </button>
+		<div id = "more2">
+			
+		<img src="images/stadioOlimpico.jpg" alt="Picture of the Stadio Olimpico" class = "ui fluid circular image">
+  
+  <p class="pRoma">The Stadio Olimpico is AS Roma's main Stadium, where they train, play and learn new skills. It is located in Rome, north of the city. 
+ The Stadium was built in 1927, and its current capacity is of 70,634 people. A tour around this legendary Stadium would be an experience you won't forget 
+ if you are a Roma fan. You will get to see Roma's cups, shirts signed by famous players, and if lucky you might even meet some of Roma's players.</p>
+ <p>
+	<span id="rating2"></span>
+</p>
+<button class="ui yellow button" id="btn4">
+	Would you visit? - <i class="star icon"></i>
+</button>
+	</div>
+	</div>
+
+ </main>
+	
+					<footer class = "sixteen wide center aligned column">
+					<p class="pfooter">&copy; AS ROMA - All rights reserved</p>
+					<p class="pfooter"><a href="mailto:20092351@mail.wit.ie" class="indexQuoteLinks">AS Roma Email</a></p>
+					</footer>
+	</div>
+						<script
+						src="https://code.jquery.com/jquery-3.4.1.min.js"
+						integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+						crossorigin="anonymous"></script>
+						<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.js"></script>
+						<script src = "js/javaScript.js"></script>
+						<script src="js/jquery.event.move.js"></script>
+						<script src="js/jquery.twentytwenty.js"></script>
+						
+						<script>
+							$(document).ready(function(){
+								$("#beforeafter").twentytwenty({
+								default_offset_pct: 0.7
+							});
+							})
+							</script>
+
+						<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+						<script>
+							anime.timeline({loop: false})
+						.add({
+							targets: '.ml15 .word',
+							scale: [14,1],
+							opacity: [0,1],
+							easing: "easeOutCirc",
+							duration: 1200,
+							delay: (el, i) => 800 * i
+						}).add({
+							targets: '.ml15',
+							opacity: 0,
+							duration: 1000,
+							easing: "easeOutExpo",
+							delay: 10000000000000000
+						});
+						</script>
+
+<script>
+	anime.timeline({loop: false})
+.add({
+	targets: '.ml12 .word',
+	scale: [14,1],
+	opacity: [0,1],
+	easing: "easeOutCirc",
+	duration: 2300,
+	delay: (el, i) => 800 * i
+}).add({
+	targets: '.ml12',
+	opacity: 0,
+	duration: 1000,
+	easing: "easeOutExpo",
+	delay: 10000000000000000
+});
+</script>
+</body>
+</html>
